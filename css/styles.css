@@ -36,6 +36,18 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .page-header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -141,8 +153,44 @@ img {
 .hero-btn:focus {
   background: #404bbf;
 }
+/* ===============advantages================= */
+.advantages-container {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+.advantages-item {
+  width: calc((100% - 24px * 3) / 4);
+}
+.advantages-item-title {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-top: 8px;
+}
+/* ===============team================= */
+.team-section {
+  background: #f4f4fd;
+}
 
-.second-title {
+.team.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 120;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-title {
   font-family: inherit;
   font-size: 36px;
   line-height: 1.11;
@@ -150,27 +198,31 @@ img {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
+  margin-top: 120px;
 }
-.third-title {
-  font-family: inherit;
+.team-list-item {
+  background: #fff;
+  text-align: center;
+}
+.team-list-img {
+  margin-bottom: 32px;
+}
+.team-list-title {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-}
-.third-section {
-  background: #f4f4fd;
-}
-.third-section-item {
-  background: #fff;
-  text-align: center;
+  margin-bottom: 8px;
 }
 .text-discrib {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* ===============footer================= */
 .page-footer {
   background: #2e2f42;
 }
