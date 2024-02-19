@@ -210,10 +210,13 @@ img {
   background: #fff;
   text-align: center;
   padding-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
 }
-.team-list-img {
-  margin-bottom: 32px;
+
+.team-item-box {
+  padding: 32px 0;
 }
+
 .team-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -221,11 +224,13 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 .text-discrib {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 /* ===============portfolio================= */
 .portfolio-section {
@@ -235,13 +240,17 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-img {
   margin-bottom: 32px;
 }
+.portfolio-item-box {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .portfolio-item-title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -249,8 +258,10 @@ img {
   color: #2e2f42;
   margin-bottom: 8px;
 }
-.text-discrib {
-  margin-bottom: 32px;
+.portfolio-text-discrib {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 /* ===============footer================= */
 .page-footer {
