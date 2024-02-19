@@ -156,7 +156,7 @@ img {
 /* ===============advantages================= */
 .advantages-section {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
 }
 .advantages-container {
   display: flex;
@@ -165,7 +165,7 @@ img {
 }
 .advantages-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 .advantages-item {
   display: block;
@@ -266,7 +266,7 @@ img {
   max-width: 264px;
 }
 .logo-footer {
-  display: block;
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
