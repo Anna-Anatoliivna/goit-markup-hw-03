@@ -53,7 +53,6 @@ img {
 }
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .logo {
@@ -94,6 +93,7 @@ img {
 
 .header-contacts {
   font-style: normal;
+  margin-left: auto;
 }
 .header-contacts-list {
   display: flex;
@@ -117,7 +117,7 @@ img {
 .section-hero {
   background: #2e2f42;
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
   padding-left: auto;
   padding-right: auto;
 }
@@ -154,17 +154,21 @@ img {
   background: #404bbf;
 }
 /* ===============advantages================= */
+.advantages-section {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
 .advantages-container {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  justify-content: space-between;
 }
 .advantages-list {
   display: flex;
-  gap: 24px;
+  /* flex-wrap: wrap; */
+  column-gap: 24px;
 }
 .advantages-item {
-  width: calc((100% - 24px * 3) / 4);
+  width: calc((100% - 72px) / 4);
 }
 .advantages-item-title {
   font-family: inherit;
@@ -178,13 +182,14 @@ img {
 /* ===============team================= */
 .team-section {
   background: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 120;
 }
 .team-list {
   display: flex;
@@ -199,17 +204,16 @@ img {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 72px;
-  margin-top: 120px;
 }
 .team-list-item {
   background: #fff;
   text-align: center;
+  padding-bottom: 32px;
 }
 .team-list-img {
   margin-bottom: 32px;
 }
 .team-list-title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -221,6 +225,31 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+/* ===============portfolio================= */
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.portfolio-img {
+  margin-bottom: 32px;
+}
+.portfolio-item-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.text-discrib {
+  margin-bottom: 32px;
 }
 /* ===============footer================= */
 .page-footer {
