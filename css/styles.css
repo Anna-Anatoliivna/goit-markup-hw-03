@@ -180,6 +180,9 @@ img {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+.advantages-item-text {
+  line-height: 1.5;
+}
 /* ===============team================= */
 .team-section {
   background: #f4f4fd;
@@ -209,7 +212,6 @@ img {
 .team-list-item {
   background: #fff;
   text-align: center;
-  padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
 }
 
